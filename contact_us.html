@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./logo/logo dark.png" type="image/icon">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <nav class="topbar aboutusnav">
+        <div class="leftcontent">
+            <img src="./logo/logo light.png" alt="" class="content logo">
+            <a href="index.html" class="content left homewrite">Home</a>
+            <a href="index.html" class="content left home"><svg xmlns="http://www.w3.org/2000/svg" width="19.2"
+                    height="19.2" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                </svg></a>
+            <a href="about_us.html" class="content left">About us</a>
+            <a href="contact_us.html" class="content left">Contact Us</a>
+        </div>
+        <div class="rightcontent">
+            <a href="sign_up.html" class="content login"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg></a>
+        </div>
+    </nav>
+    <main class="contactusbg">
+        <div class="contactuspage">
+            <h2 class="subheading">Contact Us</h2>
+            <section class="contactusdetail">
+                <div class="contactusimage"><img src="./image/contact_us.svg" alt=""></div>
+                <div class="text">
+                    <form action="#">
+                        <div class="name">
+                            <label for="first" id="writelabel">FIRST NAME</label>
+                            <input id="first" type="text" class="fill" placeholder="first name" required>
+                            <label for="last" id="writelabel">LAST NAME</label>
+                            <input id="last" type="text" class="fill" placeholder="last name">
+                        </div>
+                        <div class="email">
+                            <label for="email" id="writelabel">EMAIL</label>
+                            <input id="email" type="email" class="text" placeholder="email" required>
+                        </div>
+                        <div class="message">
+                            <label for="message" id="writelabel">MESSAGE</label>
+                            <textarea id="message" type="text" class="text" placeholder="Your message..."
+                                required></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer">
+                <a href="#" class="footeritem terms">Terms</a>
+                <a href="#" class="footeritem privacy">Privacy</a>
+                <a href="#" class="footeritem cookies">Cookies</a>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>

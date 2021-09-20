@@ -1,0 +1,637 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+} */
+/* body {
+	line-height: 1;
+} */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my css starts here */
+html{
+    font-family: 'Roboto Mono', monospace;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+}
+
+body nav{
+    width: 100%;
+    height: 5em;
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+}
+.leftcontent{
+    display: flex;
+    align-items: center;
+}
+.rightcontent{
+    margin:auto 2em;
+}
+
+.content.left{
+    display: flex;
+    font-size: 1.2em;
+    padding:5px 10px;
+    border-right:1px solid white;
+}
+.content.login svg{
+    width: 40px;
+    height: 40px;
+}
+.content.logo{
+    margin:auto 1em;
+    width: 4em;
+    height: 4em;
+    background-image: ( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    border-radius: 50%;
+    
+}
+.indexmain{
+    padding-top:6em;
+}
+.content:hover {
+    transition: all 200ms ease-in-out;
+    transform: translateY(-1.5px);
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+    color:rgba(16,66,157,1) 100.2%;
+    text-decoration: none;
+}
+.content.login svg:hover{
+    transition: all 200ms ease-in-out;
+    transform: translateY(-1.5px);
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+.content.left.home:hover{
+    transform: translateY(-1.5px);
+    border-radius:10px;
+    box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+.content.left.homewrite{
+    display: none;
+}
+
+/* main page css */
+.indexmain{
+    padding-left:2em;
+    padding-right: 2em;
+}
+.heading{
+    text-align: center;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom:20px;
+    text-shadow: 3px 3px rgba(7,7,7,0.4);
+}
+.indexmain img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.subheading{
+    color:rgb(11,27,103);
+    text-align: center;
+    font-size:2em ;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-shadow: 3px 3px rgba(7,7,7,0.4);
+}
+.row{
+    display: flex;
+}
+.row div{
+    width: 50%;
+    padding:3% 5%;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* footer starts here */
+
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+footer{
+    width: 100%;
+    height: 3em;
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.footeritem{
+    padding: 1.2em;
+    font-size: 0.8em;
+}
+
+/* about us page */
+
+body .mainbg{
+    max-width: 100%;
+    /* max-height: 100vh; */
+    background-color: #01ff48;
+    /* padding:0 0; */
+}
+.mainbg .subheading{
+    padding-top:1em;
+    text-shadow: 3px 3px rgba(7,7,7,0.4);
+}
+.aboutussection{
+    background-color: rgba(231,246,239,255);
+    border-radius: 0.8em;
+    display: flex;
+    height: fit-content;
+    margin:0em 4em 2em 4em;
+    box-shadow: 1px 1px 2px rgb(7, 7, 7), 0 0 1em rgb(7, 7, 7), 0 0 0.2em rgb(0, 0, 0);
+}
+.aboutussection div{
+    width: 50%;
+    margin:10px;
+    padding: 15px;
+}
+.aboutussection .text{
+    background-color: rgba(231,246,239,255);
+    margin:25px;
+    text-shadow: 2.5px 2.5px #cfded9;
+    text-align: justify;
+}
+.aboutussection div img{
+    width: 100%;
+    height: 100%;
+}
+
+body .aboutusnav{
+    position:static;
+}
+
+/* contact us page */
+/* .name,.email,.message{
+    border:1px solid black;
+} */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+input, textarea, select, button {
+    width : 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body .contactusbg{
+    border:1px solid black;
+    max-width: 100%;
+background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );  /* background-color: #FF6666 ; */
+}
+.contactusbg .contactuspage{
+    background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% ); 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactuspage .subheading{
+    color:#0e056e;
+    padding-top:1em;
+    font-size: 2.5em;
+}
+.contactusdetail{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 0.8em;
+    margin-bottom: 1.4em;
+    padding:1em 2em 1em 2em; 
+    box-shadow: 1px 1px 2px rgb(7, 7, 7), 0 0 1em rgb(7, 7, 7), 0 0 0.2em rgb(0, 0, 0);
+}
+.contactusdetail .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; 
+    /* font-size: 1.5em; */
+}
+.text .name{
+    display: flex;
+    max-width: 98%;  
+    align-items: center;
+}
+.contactusimage{
+    max-width: fit-content;
+    max-height: fit-content ;
+    /* text-align: center; */
+}
+.text label,.text input{
+    border: none;
+    display: inline-block;
+}
+.text input{
+    width: 100%;         
+    padding:12px 20px;
+    margin:8px 0;
+    box-sizing: border-box;
+    border:1px solid #91b3fa;
+    border-radius: 5px;
+}
+
+.text .message textarea{
+    width: 100%;
+    padding:12px 20px;
+    border:1px solid #91b3fa;
+    border-radius: 5px;
+    height: 6em;
+    margin-top:8px;
+}
+.text input:focus,.text textarea:focus{
+    outline: #0f0671;
+    border: 3px solid #0f0671;
+    box-sizing: border-box;
+    background-color: white;
+    color: #0f0671;
+}
+.text .name input{
+    width: fit-content;
+}
+.text div{
+    padding:1em 0.5em;
+    border-bottom: 2px solid #0e056e;
+}
+.text div:last-child{
+    border-bottom: none;
+}
+.text .name label{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.text .name label:first-child{
+    padding-left:0;
+}
+.text label{
+    font-size: 1em;
+}
+.text .submit{
+    text-align: center;
+}
+.text .submit button{
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:#0c0469;
+    color: white;
+    border:1px solid #0c0469;
+    border-radius: 5px;
+}
+.text .submit button:hover,.text .submit button:active{
+    background-color: #0c0469;
+    border:1px solid #0c0469;
+    box-shadow: 1px 1px 2px rgb(7, 7, 7), 0 0 1em rgb(7, 7, 7), 0 0 0.2em rgb(0, 0, 0);
+}
+
+/* for sign up page */
+.signuppage .signuptext label{
+    display: inline-block;
+}
+.signuppage.signupdetail .profileimage{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.signuppage .signupdetail .profileimage img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.body .signupmain{
+    background-color: cyan;
+}
+.signuppage{
+    background: radial-gradient(circle, hsla(211, 100%, 50%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signuppage .signupdetail{
+    width: fit-content;
+    height: fit-content;
+    background-image: linear-gradient(270deg, hsla(271, 77%, 50%, 1) 0%, hsla(234, 79%, 52%, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1em 2em 1em 2em;            /* this property needed for responsive*/
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 2px rgb(7, 7, 7), 0 0 1em rgb(7, 7, 7), 0 0 0.2em rgb(0, 0, 0);
+}
+.signuppage .signupdetail .signuptext{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+}
+.signuppage .signuptext .name {
+    display: flex;
+    align-items: center;
+}
+
+.signuppage .signuptext input{
+    width: 100%;
+    padding:12px 20px;
+    margin:8px 0;
+    box-sizing: border-box;
+    border:1px solid #91b3fa;
+    border-radius: 5px;
+}
+.signuppage .signuptext .name input{
+    width: fit-content;
+}
+.signuppage .signuptext .signup,.signuppage .signuptext .signin{
+    text-align: center;
+}
+.signuppage .signuptext div{
+    color:white;
+    padding-left:0.5em;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+.signuppage .signuptext div:last-child{
+    border-bottom: none;
+}
+.signuppage .signuptext div:nth-last-child(2){
+    border-bottom: none;
+}
+#writelabellast{
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+#writelabelfirst{
+    padding-right: 0.5em;
+}
+.signuppage .subheading{
+    padding-top: 1em;
+    padding-bottom: 0.6em;
+}
+.signuppage .signuptext .signup button{
+    width: auto;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:#0c0469;
+    color: white;
+    border:1px solid #0c0469;
+    border-radius: 5px;
+}
+.signuppage .signuptext .signup button:hover,.signuppage .signuptext .signup button:active{
+    background-color: #0c0469;
+    border:1px solid #0c0469;
+    box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+.signuppage .signuptext .signin a{
+    color:#0f0671;
+}
+
+/* for sign in page to decrease size of image */
+.signinmain .signuppage .signupdetail .profileimage img{
+    max-width: 60%;
+    max-height: 60%;
+}
+.signinmain .profileimage{
+    text-align: center;
+}
+.signinmain .signuppage .signupdetail{
+    max-width: 30%;
+}
+
+
+@media (max-width:700px){
+    .content.left{
+        font-size: 0.9em;
+    }
+    .content.logo{
+        width:3em;
+        height: 3em;
+    }
+    .content.left svg{
+        width: 16px;
+        height: 16px;
+    }
+    .content.login svg{
+        width: 25px;
+        height: 25px;
+    }
+    .heading{
+        font-size: 2.5em;
+    }
+    .subheading{
+        font-size: 1.5em;
+    }
+    .text{
+        font-size:0.8em ;
+    }
+    /* for about us page */
+    .aboutussection{
+        flex-direction: column;
+    }
+    .aboutussection div{
+        width: fit-content;
+        margin:0;
+        padding: 0;
+    }    
+    .aboutussection div img{
+        border-radius: 0.8em;
+    }
+    /* for contact us page */
+    .contactuspage .subheading{
+        padding-top:0.6em;
+        font-size: 2em;
+    }
+    .contactuspage .text label{
+        font-size: 1em;
+    }
+    /* for sign in page */
+    .signinmain .signuppage .signupdetail{
+        max-width: fit-content;
+    }    
+}
+
+@media (max-width:570px){
+    .text .name{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contactuspage .contactusdetail .text{
+        align-items: stretch;
+    }
+    .text .name input{
+        width: auto;
+    }
+    .contactusdetail{
+        padding:0.6em 1em 0.6em 1em;
+    }
+    /* for sign up page */
+    .signuppage .signuptext .name{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .signuppage .signuptext .name input{
+        width: 100%;
+    }
+    .signuppage .signupdetail{
+        padding:0.6em 1em 0.6em 1em;
+    }
+    #writelabellast{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #writelabelfirst{
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width:405px){
+    body nav{
+        height: 10em;
+    }
+    .leftcontent{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content.left{
+        border-right: none;
+        border-top:1px solid white;
+    }
+    .content.left:nth-child(2){
+        border-top: none;
+    }
+    .content.login svg{
+        width: 40px;
+        height: 40px;
+    }
+    .content.logo{
+        margin: 10px 0 10px 5px;
+    }
+    .indexmain{
+        padding-top:11em;
+    }
+    .heading{
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    .subheading{
+        font-size: 1.2em;
+        margin-top:15px;
+    }
+    .row{
+        margin:5px 0;
+        flex-direction: column;
+    }
+    .row.second{
+        flex-direction: column-reverse;
+    }
+    .row div{
+        width: 100%;
+        padding: 0 0;
+    }
+    .content.left.homewrite{
+        display: flex;
+    }
+    .content.left.home{
+        display: none;
+    }
+    /* for about us page */
+    .aboutussection{
+        flex-direction: column;
+        padding:2px;
+        margin:0;
+    }
+    .aboutussection div{
+        width:fit-content;
+        margin:0;
+        padding: 0;
+        border-radius: 0.8em;
+    }
+    .aboutussection div img{
+        border-radius: 0.8em;
+    }
+    .mainbg .subheading{
+        margin-top:0;
+    }
+    .aboutussection .text{
+        margin:0;
+    }
+    /* for contactus page */
+    .contactusimage img{
+        width: 200px;
+        height: 200px;
+    }
+    .text .submit button{
+        margin:0px;
+        padding: 7px 7px;
+        border-radius: 3px;
+    }
+    .contactusdetail{
+        width: fit-content;
+        height: fit-content;
+        padding: 0;
+    }
+    /* for sign up page */
+    .signuppage .signupdetail{
+        padding:0;
+    }
+}
+
+
