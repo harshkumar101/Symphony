@@ -177,11 +177,12 @@ footer .footer{
 body .mainbg{
     max-width: 100%;
     /* max-height: 100vh; */
-    background-color: #01ff48;
+    background-color: #06d6a0;
     /* padding:0 0; */
 }
 .mainbg .subheading{
     padding-top:1em;
+    padding-bottom:0.3em;
     text-shadow: 3px 3px rgba(7,7,7,0.4);
 }
 .aboutussection{
@@ -243,6 +244,7 @@ background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(3
 .contactuspage .subheading{
     color:#0e056e;
     padding-top:1em;
+    padding-bottom:0.3em;
     font-size: 2.5em;
 }
 .contactusdetail{
@@ -440,7 +442,7 @@ background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(3
     box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
 }
 .signuppage .signuptext .signin a{
-    color:#0f0671;
+    color:blue;
 }
 
 /* for sign in page to decrease size of image */
@@ -542,7 +544,7 @@ background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(3
 
 }
 
-@media (max-width:405px){
+@media (max-width:450px){
     body nav{
         height: 10em;
     }
